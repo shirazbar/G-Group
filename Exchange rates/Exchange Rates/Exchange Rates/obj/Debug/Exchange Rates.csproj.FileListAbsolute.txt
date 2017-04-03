@@ -1,0 +1,9 @@
+c:\users\user\documents\visual studio 2013\Projects\Exchange Rates\Exchange Rates\bin\Debug\Exchange Rates.exe.config
+c:\users\user\documents\visual studio 2013\Projects\Exchange Rates\Exchange Rates\bin\Debug\Exchange Rates.exe
+c:\users\user\documents\visual studio 2013\Projects\Exchange Rates\Exchange Rates\bin\Debug\Exchange Rates.pdb
+c:\users\user\documents\visual studio 2013\Projects\Exchange Rates\Exchange Rates\obj\Debug\Exchange Rates.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2013\Projects\Exchange Rates\Exchange Rates\obj\Debug\Exchange_Rates.Form1.resources
+c:\users\user\documents\visual studio 2013\Projects\Exchange Rates\Exchange Rates\obj\Debug\Exchange_Rates.Properties.Resources.resources
+c:\users\user\documents\visual studio 2013\Projects\Exchange Rates\Exchange Rates\obj\Debug\Exchange Rates.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2013\Projects\Exchange Rates\Exchange Rates\obj\Debug\Exchange Rates.exe
+c:\users\user\documents\visual studio 2013\Projects\Exchange Rates\Exchange Rates\obj\Debug\Exchange Rates.pdb
