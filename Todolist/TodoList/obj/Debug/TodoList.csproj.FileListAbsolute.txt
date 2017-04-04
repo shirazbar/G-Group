@@ -1,0 +1,9 @@
+c:\users\elad\documents\visual studio 2013\Projects\TodoList\TodoList\bin\Debug\TodoList.exe.config
+c:\users\elad\documents\visual studio 2013\Projects\TodoList\TodoList\bin\Debug\TodoList.exe
+c:\users\elad\documents\visual studio 2013\Projects\TodoList\TodoList\bin\Debug\TodoList.pdb
+c:\users\elad\documents\visual studio 2013\Projects\TodoList\TodoList\obj\Debug\TodoList.csprojResolveAssemblyReference.cache
+c:\users\elad\documents\visual studio 2013\Projects\TodoList\TodoList\obj\Debug\TodoList.Form1.resources
+c:\users\elad\documents\visual studio 2013\Projects\TodoList\TodoList\obj\Debug\TodoList.Properties.Resources.resources
+c:\users\elad\documents\visual studio 2013\Projects\TodoList\TodoList\obj\Debug\TodoList.csproj.GenerateResource.Cache
+c:\users\elad\documents\visual studio 2013\Projects\TodoList\TodoList\obj\Debug\TodoList.exe
+c:\users\elad\documents\visual studio 2013\Projects\TodoList\TodoList\obj\Debug\TodoList.pdb

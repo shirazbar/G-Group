@@ -1,0 +1,9 @@
+c:\users\elad\documents\visual studio 2013\Projects\News\News\bin\Debug\News.exe.config
+C:\Users\elad\documents\visual studio 2013\Projects\News\News\bin\Debug\News.exe
+C:\Users\elad\documents\visual studio 2013\Projects\News\News\bin\Debug\News.pdb
+C:\Users\elad\documents\visual studio 2013\Projects\News\News\obj\Debug\News.csprojResolveAssemblyReference.cache
+C:\Users\elad\documents\visual studio 2013\Projects\News\News\obj\Debug\News.Form1.resources
+C:\Users\elad\documents\visual studio 2013\Projects\News\News\obj\Debug\News.Properties.Resources.resources
+C:\Users\elad\documents\visual studio 2013\Projects\News\News\obj\Debug\News.csproj.GenerateResource.Cache
+C:\Users\elad\documents\visual studio 2013\Projects\News\News\obj\Debug\News.exe
+C:\Users\elad\documents\visual studio 2013\Projects\News\News\obj\Debug\News.pdb

@@ -1,0 +1,9 @@
+c:\users\elad\documents\visual studio 2013\Projects\AlbomPic\AlbomPic\bin\Debug\AlbomPic.exe.config
+c:\users\elad\documents\visual studio 2013\Projects\AlbomPic\AlbomPic\bin\Debug\AlbomPic.exe
+c:\users\elad\documents\visual studio 2013\Projects\AlbomPic\AlbomPic\bin\Debug\AlbomPic.pdb
+c:\users\elad\documents\visual studio 2013\Projects\AlbomPic\AlbomPic\obj\Debug\AlbomPic.csprojResolveAssemblyReference.cache
+c:\users\elad\documents\visual studio 2013\Projects\AlbomPic\AlbomPic\obj\Debug\AlbomPic.Form1.resources
+c:\users\elad\documents\visual studio 2013\Projects\AlbomPic\AlbomPic\obj\Debug\AlbomPic.Properties.Resources.resources
+c:\users\elad\documents\visual studio 2013\Projects\AlbomPic\AlbomPic\obj\Debug\AlbomPic.csproj.GenerateResource.Cache
+c:\users\elad\documents\visual studio 2013\Projects\AlbomPic\AlbomPic\obj\Debug\AlbomPic.exe
+c:\users\elad\documents\visual studio 2013\Projects\AlbomPic\AlbomPic\obj\Debug\AlbomPic.pdb
