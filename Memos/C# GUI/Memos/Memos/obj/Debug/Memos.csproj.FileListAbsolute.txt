@@ -1,0 +1,9 @@
+c:\users\orcohen125\documents\visual studio 2015\Projects\Memos\Memos\bin\Debug\Memos.exe.config
+c:\users\orcohen125\documents\visual studio 2015\Projects\Memos\Memos\bin\Debug\Memos.exe
+c:\users\orcohen125\documents\visual studio 2015\Projects\Memos\Memos\bin\Debug\Memos.pdb
+c:\users\orcohen125\documents\visual studio 2015\Projects\Memos\Memos\obj\Debug\Memos.csprojResolveAssemblyReference.cache
+c:\users\orcohen125\documents\visual studio 2015\Projects\Memos\Memos\obj\Debug\Memos.Form1.resources
+c:\users\orcohen125\documents\visual studio 2015\Projects\Memos\Memos\obj\Debug\Memos.Properties.Resources.resources
+c:\users\orcohen125\documents\visual studio 2015\Projects\Memos\Memos\obj\Debug\Memos.csproj.GenerateResource.Cache
+c:\users\orcohen125\documents\visual studio 2015\Projects\Memos\Memos\obj\Debug\Memos.exe
+c:\users\orcohen125\documents\visual studio 2015\Projects\Memos\Memos\obj\Debug\Memos.pdb

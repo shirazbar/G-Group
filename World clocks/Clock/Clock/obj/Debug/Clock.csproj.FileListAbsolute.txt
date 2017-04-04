@@ -1,0 +1,9 @@
+c:\users\orcohen125\documents\visual studio 2015\Projects\Clock\Clock\bin\Debug\Clock.exe.config
+C:\Users\orcohen125\Documents\Visual Studio 2015\Projects\Clock\Clock\bin\Debug\Clock.exe
+C:\Users\orcohen125\Documents\Visual Studio 2015\Projects\Clock\Clock\bin\Debug\Clock.pdb
+C:\Users\orcohen125\Documents\Visual Studio 2015\Projects\Clock\Clock\obj\Debug\Clock.csprojResolveAssemblyReference.cache
+C:\Users\orcohen125\Documents\Visual Studio 2015\Projects\Clock\Clock\obj\Debug\Clock.Form1.resources
+C:\Users\orcohen125\Documents\Visual Studio 2015\Projects\Clock\Clock\obj\Debug\Clock.Properties.Resources.resources
+C:\Users\orcohen125\Documents\Visual Studio 2015\Projects\Clock\Clock\obj\Debug\Clock.csproj.GenerateResource.Cache
+C:\Users\orcohen125\Documents\Visual Studio 2015\Projects\Clock\Clock\obj\Debug\Clock.exe
+C:\Users\orcohen125\Documents\Visual Studio 2015\Projects\Clock\Clock\obj\Debug\Clock.pdb
