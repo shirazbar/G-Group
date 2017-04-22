@@ -1,0 +1,25 @@
+c:\users\user\documents\visual studio 2013\Projects\Exchange Rates\Exchange Rates\bin\Debug\Exchange Rates.exe.config
+c:\users\user\documents\visual studio 2013\Projects\Exchange Rates\Exchange Rates\bin\Debug\Exchange Rates.exe
+c:\users\user\documents\visual studio 2013\Projects\Exchange Rates\Exchange Rates\bin\Debug\Exchange Rates.pdb
+c:\users\user\documents\visual studio 2013\Projects\Exchange Rates\Exchange Rates\obj\Debug\Exchange Rates.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2013\Projects\Exchange Rates\Exchange Rates\obj\Debug\Exchange_Rates.Form1.resources
+c:\users\user\documents\visual studio 2013\Projects\Exchange Rates\Exchange Rates\obj\Debug\Exchange_Rates.Properties.Resources.resources
+c:\users\user\documents\visual studio 2013\Projects\Exchange Rates\Exchange Rates\obj\Debug\Exchange Rates.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2013\Projects\Exchange Rates\Exchange Rates\obj\Debug\Exchange Rates.exe
+c:\users\user\documents\visual studio 2013\Projects\Exchange Rates\Exchange Rates\obj\Debug\Exchange Rates.pdb
+C:\Users\User\documents\visual studio 2013\Projects\Exchange Rates\Exchange Rates\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\documents\visual studio 2013\Projects\Exchange Rates\Exchange Rates\bin\Debug\xNet.dll
+C:\Users\User\documents\visual studio 2013\Projects\Exchange Rates\Exchange Rates\bin\Debug\xNet.pdb
+C:\Users\User\documents\visual studio 2013\Projects\Exchange Rates\Exchange Rates\bin\Debug\xNet.xml
+C:\Users\User\Desktop\Project G-group\G-Group\Exchange rates\C#\Exchange Rates\bin\Debug\Exchange Rates.exe.config
+C:\Users\User\Desktop\Project G-group\G-Group\Exchange rates\C#\Exchange Rates\obj\Debug\Exchange Rates.exe
+C:\Users\User\Desktop\Project G-group\G-Group\Exchange rates\C#\Exchange Rates\obj\Debug\Exchange Rates.pdb
+C:\Users\User\Desktop\Project G-group\G-Group\Exchange rates\C#\Exchange Rates\bin\Debug\Exchange Rates.exe
+C:\Users\User\Desktop\Project G-group\G-Group\Exchange rates\C#\Exchange Rates\bin\Debug\Exchange Rates.pdb
+C:\Users\User\Desktop\Project G-group\G-Group\Exchange rates\C#\Exchange Rates\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Desktop\Project G-group\G-Group\Exchange rates\C#\Exchange Rates\bin\Debug\xNet.pdb
+C:\Users\User\Desktop\Project G-group\G-Group\Exchange rates\C#\Exchange Rates\bin\Debug\xNet.xml
+C:\Users\User\Desktop\Project G-group\G-Group\Exchange rates\C#\Exchange Rates\obj\Debug\Exchange Rates.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\Project G-group\G-Group\Exchange rates\C#\Exchange Rates\obj\Debug\Exchange_Rates.Form1.resources
+C:\Users\User\Desktop\Project G-group\G-Group\Exchange rates\C#\Exchange Rates\obj\Debug\Exchange_Rates.Properties.Resources.resources
+C:\Users\User\Desktop\Project G-group\G-Group\Exchange rates\C#\Exchange Rates\obj\Debug\Exchange Rates.csproj.GenerateResource.Cache
