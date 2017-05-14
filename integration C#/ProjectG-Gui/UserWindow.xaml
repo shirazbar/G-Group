@@ -31,7 +31,7 @@
                 <ImageBrush ImageSource="C:\Users\Shiraz\Pictures\news.ico" Stretch="Uniform"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Height="81" Margin="38,289,0,0" VerticalAlignment="Top" Width="89" BorderBrush="{x:Null}">
+        <Button Content="" HorizontalAlignment="Left" Height="81" Margin="38,289,0,0" VerticalAlignment="Top" Width="89" BorderBrush="{x:Null}" Click="ToDoList_Click">
             <Button.Background>
                 <ImageBrush ImageSource="C:\Users\Shiraz\Pictures\todo.png" Stretch="Uniform"/>
             </Button.Background>
@@ -46,7 +46,7 @@
                 <ImageBrush ImageSource="C:\Users\Shiraz\Pictures\memos.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Height="101" Margin="171,279,0,0" VerticalAlignment="Top" Width="99" BorderBrush="{x:Null}">
+        <Button Content="" HorizontalAlignment="Left" Height="101" Margin="171,279,0,0" VerticalAlignment="Top" Width="99" BorderBrush="{x:Null}" Click="Calculator_Click">
             <Button.Background>
                 <ImageBrush ImageSource="C:\Users\Shiraz\Pictures\calc1.png" Stretch="Uniform"/>
             </Button.Background>

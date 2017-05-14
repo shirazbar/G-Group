@@ -42,5 +42,17 @@ namespace ProjectG_Gui
             WorldClocks window = new WorldClocks();
             window.Show();
         }
+
+        private void Calculator_Click(object sender, RoutedEventArgs e)
+        {
+            Calculator window = new Calculator();
+            window.Show();
+        }
+
+        private void ToDoList_Click(object sender, RoutedEventArgs e)
+        {
+            ToDoList window = new ToDoList();
+            window.Show();
+        }
     }
 }

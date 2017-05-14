@@ -25,3 +25,7 @@ C:\Users\Shiraz\Documents\Visual Studio 2013\Projects\ProjectG-Gui\ProjectG-Gui\
 C:\Users\Shiraz\Documents\Visual Studio 2013\Projects\ProjectG-Gui\ProjectG-Gui\obj\Debug\Calculator.g.cs
 C:\Users\Shiraz\Documents\Visual Studio 2013\Projects\ProjectG-Gui\ProjectG-Gui\obj\Debug\WorldClocks.baml
 C:\Users\Shiraz\Documents\Visual Studio 2013\Projects\ProjectG-Gui\ProjectG-Gui\obj\Debug\WorldClocks.g.cs
+C:\Users\Shiraz\Documents\Visual Studio 2013\Projects\ProjectG-Gui\ProjectG-Gui\obj\Debug\ToDoList.baml
+C:\Users\Shiraz\Documents\Visual Studio 2013\Projects\ProjectG-Gui\ProjectG-Gui\obj\Debug\ToDoList.g.cs
+C:\Users\Shiraz\Documents\Visual Studio 2013\Projects\ProjectG-Gui\ProjectG-Gui\obj\Debug\CreatingNewTask.baml
+C:\Users\Shiraz\Documents\Visual Studio 2013\Projects\ProjectG-Gui\ProjectG-Gui\obj\Debug\CreatingNewTask.g.cs
