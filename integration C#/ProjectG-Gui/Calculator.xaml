@@ -1,0 +1,46 @@
+﻿<Window x:Class="ProjectG_Gui.Calculator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Calculator" Height="531.298" Width="416.672">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="0"/>
+            <GradientStop Color="#FF66D68A" Offset="1"/>
+            <GradientStop Color="#FF1B4F63"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid RenderTransformOrigin="0.501,0.7">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="62,10,0,0" TextWrapping="Wrap" FontFamily="Script MT Bold" FontSize="65" Text="Calculator" VerticalAlignment="Top" TextDecorations="{x:Null}">
+            <TextBlock.Effect>
+                <DropShadowEffect BlurRadius="9" Direction="400" Color="White"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBox HorizontalAlignment="Left" FontSize="18" Height="57" Margin="30,91,0,0" TextWrapping="Wrap" Name="textBox1"  VerticalAlignment="Top" Width="350"/>
+        <Button Content="Clear" Name="ClearButton" HorizontalAlignment="Left" Height="50" Margin="52,163,0,0" VerticalAlignment="Top" Width="66" Click="ClearButton_Click" />
+        <Button Content="Delete" Name="DeleteButton" HorizontalAlignment="Left" Height="50" Margin="132,163,0,0" VerticalAlignment="Top" Width="66"/>
+        <Button Content="+" Name="Button4" HorizontalAlignment="Left" Height="50" Margin="292,163,0,0" VerticalAlignment="Top" Width="66"/>
+        <Button Content="-" Name="Button8" HorizontalAlignment="Left" Height="50" Margin="292,218,0,0" VerticalAlignment="Top" Width="66"/>
+        <Button Content="9" Name="Button7" HorizontalAlignment="Left" Height="50" Margin="212,218,0,0" VerticalAlignment="Top" Width="66"/>
+        <Button Content="8" Name="Button6" HorizontalAlignment="Left" Height="50" Margin="132,218,0,0" VerticalAlignment="Top" Width="66"/>
+        <Button Content="7" Name="Button5" HorizontalAlignment="Left" Height="50" Margin="52,218,0,0" VerticalAlignment="Top" Width="66"/>
+        <Button Content="+/-" Name="Button3" HorizontalAlignment="Left" Height="50" Margin="212,163,0,0" VerticalAlignment="Top" Width="66"/>
+        <Button Content="4" Name="Button9" HorizontalAlignment="Left" Height="50" Margin="52,273,0,0" VerticalAlignment="Top" Width="66"/>
+        <Button Content="*" Name="Button12" HorizontalAlignment="Left" Height="50" Margin="292,273,0,0" VerticalAlignment="Top" Width="66"/>
+        <Button Content="6" Name="Button11" HorizontalAlignment="Left" Height="50" Margin="212,273,0,0" VerticalAlignment="Top" Width="66"/>
+        <Button Content="5" Name="Button10" HorizontalAlignment="Left" Height="50" Margin="132,273,0,0" VerticalAlignment="Top" Width="66"/>
+        <Button Content="1" Name="Button13" HorizontalAlignment="Left" Height="50" Margin="52,328,0,0" VerticalAlignment="Top" Width="66"/>
+        <Button Content="/" Name="Button16" HorizontalAlignment="Left" Height="50" Margin="292,328,0,0" VerticalAlignment="Top" Width="66"/>
+        <Button Content="3" Name="Button15" HorizontalAlignment="Left" Height="50" Margin="212,328,0,0" VerticalAlignment="Top" Width="66"/>
+        <Button Content="2" Name="Button14" HorizontalAlignment="Left" Height="50" Margin="132,328,0,0" VerticalAlignment="Top" Width="66"/>
+        <Button Content="0" Name="Button17" HorizontalAlignment="Left" Height="50" Margin="52,383,0,0" VerticalAlignment="Top" Width="66" />
+        <Button Content=")" Name="Button20" HorizontalAlignment="Left" Height="50" Margin="292,383,0,0" VerticalAlignment="Top" Width="66"/>
+        <Button Content="(" Name="Button19" HorizontalAlignment="Left" Height="50" Margin="212,383,0,0" VerticalAlignment="Top" Width="66"/>
+        <Button Content="." Name="Button18" HorizontalAlignment="Left" Height="50" Margin="132,383,0,0" VerticalAlignment="Top" Width="66"/>
+        <Button Content="=" Name="Button21" HorizontalAlignment="Left" Height="50" Margin="52,438,0,0" VerticalAlignment="Top" Width="306"/>
+
+    </Grid>
+</Window>
