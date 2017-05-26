@@ -33,8 +33,9 @@ namespace ProjectG_Gui
 
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
-            //System.Diagnostics.Process.Start(Application.ResourceAssembly.Location);
-            //Application.Current.Shutdown();
+            MainWindow window = new MainWindow();
+            this.Close();
+            window.Show();
         }
 
         private void WorldClocks_Click(object sender, RoutedEventArgs e)

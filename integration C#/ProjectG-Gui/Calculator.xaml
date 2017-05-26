@@ -21,26 +21,27 @@
         </TextBlock>
         <TextBox HorizontalAlignment="Left" FontSize="18" Height="57" Margin="30,91,0,0" TextWrapping="Wrap" Name="textBox1"  VerticalAlignment="Top" Width="350"/>
         <Button Content="Clear" Name="ClearButton" HorizontalAlignment="Left" Height="50" Margin="52,163,0,0" VerticalAlignment="Top" Width="66" Click="ClearButton_Click" />
-        <Button Content="Delete" Name="DeleteButton" HorizontalAlignment="Left" Height="50" Margin="132,163,0,0" VerticalAlignment="Top" Width="66"/>
-        <Button Content="+" Name="Button4" HorizontalAlignment="Left" Height="50" Margin="292,163,0,0" VerticalAlignment="Top" Width="66"/>
-        <Button Content="-" Name="Button8" HorizontalAlignment="Left" Height="50" Margin="292,218,0,0" VerticalAlignment="Top" Width="66"/>
-        <Button Content="9" Name="Button7" HorizontalAlignment="Left" Height="50" Margin="212,218,0,0" VerticalAlignment="Top" Width="66"/>
-        <Button Content="8" Name="Button6" HorizontalAlignment="Left" Height="50" Margin="132,218,0,0" VerticalAlignment="Top" Width="66"/>
-        <Button Content="7" Name="Button5" HorizontalAlignment="Left" Height="50" Margin="52,218,0,0" VerticalAlignment="Top" Width="66"/>
-        <Button Content="+/-" Name="Button3" HorizontalAlignment="Left" Height="50" Margin="212,163,0,0" VerticalAlignment="Top" Width="66"/>
-        <Button Content="4" Name="Button9" HorizontalAlignment="Left" Height="50" Margin="52,273,0,0" VerticalAlignment="Top" Width="66"/>
-        <Button Content="*" Name="Button12" HorizontalAlignment="Left" Height="50" Margin="292,273,0,0" VerticalAlignment="Top" Width="66"/>
-        <Button Content="6" Name="Button11" HorizontalAlignment="Left" Height="50" Margin="212,273,0,0" VerticalAlignment="Top" Width="66"/>
-        <Button Content="5" Name="Button10" HorizontalAlignment="Left" Height="50" Margin="132,273,0,0" VerticalAlignment="Top" Width="66"/>
-        <Button Content="1" Name="Button13" HorizontalAlignment="Left" Height="50" Margin="52,328,0,0" VerticalAlignment="Top" Width="66"/>
-        <Button Content="/" Name="Button16" HorizontalAlignment="Left" Height="50" Margin="292,328,0,0" VerticalAlignment="Top" Width="66"/>
-        <Button Content="3" Name="Button15" HorizontalAlignment="Left" Height="50" Margin="212,328,0,0" VerticalAlignment="Top" Width="66"/>
-        <Button Content="2" Name="Button14" HorizontalAlignment="Left" Height="50" Margin="132,328,0,0" VerticalAlignment="Top" Width="66"/>
-        <Button Content="0" Name="Button17" HorizontalAlignment="Left" Height="50" Margin="52,383,0,0" VerticalAlignment="Top" Width="66" />
-        <Button Content=")" Name="Button20" HorizontalAlignment="Left" Height="50" Margin="292,383,0,0" VerticalAlignment="Top" Width="66"/>
-        <Button Content="(" Name="Button19" HorizontalAlignment="Left" Height="50" Margin="212,383,0,0" VerticalAlignment="Top" Width="66"/>
-        <Button Content="." Name="Button18" HorizontalAlignment="Left" Height="50" Margin="132,383,0,0" VerticalAlignment="Top" Width="66"/>
-        <Button Content="=" Name="Button21" HorizontalAlignment="Left" Height="50" Margin="52,438,0,0" VerticalAlignment="Top" Width="306"/>
+        <Button Content="Delete" Name="DeleteButton" HorizontalAlignment="Left" Height="50" Margin="132,163,0,0" VerticalAlignment="Top" Width="66" Click="DeleteButton_Click"/>
+        <Button Content="+" Name="Button4" HorizontalAlignment="Left" Height="50" Margin="292,163,0,0" VerticalAlignment="Top" Width="66" Click="Button4_Click"/>
+        <Button Content="-" Name="Button8" HorizontalAlignment="Left" Height="50" Margin="292,218,0,0" VerticalAlignment="Top" Width="66" Click="Button8_Click"/>
+        <Button Content="9" Name="Button7" HorizontalAlignment="Left" Height="50" Margin="212,218,0,0" VerticalAlignment="Top" Width="66" Click="Button7_Click"/>
+        <Button Content="8" Name="Button6" HorizontalAlignment="Left" Height="50" Margin="132,218,0,0" VerticalAlignment="Top" Width="66" Click="Button6_Click"/>
+        <Button Content="7" Name="Button5" HorizontalAlignment="Left" Height="50" Margin="52,218,0,0" VerticalAlignment="Top" Width="66" Click="Button5_Click"/>
+        <Button Content="+/-" Name="Button3" HorizontalAlignment="Left" Height="50" Margin="212,163,0,0" VerticalAlignment="Top" Width="66" Click="Button3_Click"/>
+        <Button Content="4" Name="Button9" HorizontalAlignment="Left" Height="50" Margin="52,273,0,0" VerticalAlignment="Top" Width="66" Click="Button9_Click"/>
+        <Button Content="*" Name="Button12" HorizontalAlignment="Left" Height="50" Margin="292,273,0,0" VerticalAlignment="Top" Width="66" Click="Button12_Click"/>
+        <Button Content="6" Name="Button11" HorizontalAlignment="Left" Height="50" Margin="212,273,0,0" VerticalAlignment="Top" Width="66" Click="Button11_Click"/>
+        <Button Content="5" Name="Button10" HorizontalAlignment="Left" Height="50" Margin="132,273,0,0" VerticalAlignment="Top" Width="66" Click="Button10_Click"/>
+        <Button Content="1" Name="Button13" HorizontalAlignment="Left" Height="50" Margin="52,328,0,0" VerticalAlignment="Top" Width="66" Click="Button13_Click"/>
+        <Button Content="/" Name="Button16" HorizontalAlignment="Left" Height="50" Margin="292,328,0,0" VerticalAlignment="Top" Width="66" Click="Button16_Click"/>
+        <Button Content="3" Name="Button15" HorizontalAlignment="Left" Height="50" Margin="212,328,0,0" VerticalAlignment="Top" Width="66" Click="Button15_Click"/>
+        <Button Content="2" Name="Button14" HorizontalAlignment="Left" Height="50" Margin="132,328,0,0" VerticalAlignment="Top" Width="66" Click="Button14_Click"/>
+        <Button Content="0" Name="Button17" HorizontalAlignment="Left" Height="50" Margin="52,383,0,0" VerticalAlignment="Top" Width="66" Click="Button17_Click" />
+        <Button Content=")" Name="Button20" HorizontalAlignment="Left" Height="50" Margin="292,383,0,0" VerticalAlignment="Top" Width="66" Click="Button20_Click"/>
+        <Button Content="(" Name="Button19" HorizontalAlignment="Left" Height="50" Margin="212,383,0,0" VerticalAlignment="Top" Width="66" Click="Button19_Click"/>
+        <Button Content="." Name="Button18" HorizontalAlignment="Left" Height="50" Margin="132,383,0,0" VerticalAlignment="Top" Width="66" Click="Button18_Click"/>
+        <Button Content="=" Name="Button21" HorizontalAlignment="Left" Height="50" Margin="52,438,0,0" VerticalAlignment="Top" Width="306" Click="Button21_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="42,104,0,0" TextWrapping="Wrap" Name="label1" Text="" VerticalAlignment="Top" Width="123"/>
 
     </Grid>
 </Window>
