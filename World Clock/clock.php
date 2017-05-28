@@ -11,7 +11,8 @@ class MyTime{
 		if(isset($value)){
 			$newPath=$basicPath."?tz=".$value;
 		}else{
-			echo "value not set";
+			$newPath=$basicPath."?tz="."Israel";
+			//echo "value not set";
 		}
 		$file = file_get_contents($newPath);
 		$myItem=json_decode($file, true);
