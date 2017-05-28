@@ -19,14 +19,15 @@ class User
 
     public function runQuery($sql)
     {
-        $stmt = $this->conn->prepare($sql);
+                $stmt = $this->conn->prepare($sql);
         return $stmt;
     }
 
     public function register($uname,$umail,$upass)
     {
         try{
-            $req = $this->conn->prepare("INSERT INTO users(UserName,UserMail,UserPassword) VALUES(:UserName,:UserMail,:UserPassword)");
+            $req = $this->conn->prepare("INSERT INTO users(UserName,UserMail,UserPassword) 
+                                        VALUES(:UserName,:UserMail,:UserPassword)");
             $req->execute(array(
                 'UserName' => $uname,
                 'UserMail' => $umail,

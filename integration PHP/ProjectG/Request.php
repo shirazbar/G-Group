@@ -11,7 +11,7 @@ class Request
     function __construct(){
     }
 
-    function Postinput($arg){
+    function input($arg){
         if (isset($_POST[$arg]))
         {
             return $_POST[$arg];
@@ -20,7 +20,7 @@ class Request
             return null;
     }
 
-    function Getinput($arg){
+    function query($arg){
         if (isset($_GET[$arg]))
         {
             return $_GET[$arg];
