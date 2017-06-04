@@ -7,3 +7,6 @@ c:\users\orcohen125\documents\visual studio 2015\Projects\Memos\Memos\obj\Debug\
 c:\users\orcohen125\documents\visual studio 2015\Projects\Memos\Memos\obj\Debug\Memos.csproj.GenerateResource.Cache
 c:\users\orcohen125\documents\visual studio 2015\Projects\Memos\Memos\obj\Debug\Memos.exe
 c:\users\orcohen125\documents\visual studio 2015\Projects\Memos\Memos\obj\Debug\Memos.pdb
+C:\Users\orcohen125\G-Group\Memos\C#\Memos\Memos\bin\Debug\Memos.exe.config
+C:\Users\orcohen125\G-Group\Memos\C#\Memos\Memos\obj\Debug\Memos.exe
+C:\Users\orcohen125\G-Group\Memos\C#\Memos\Memos\obj\Debug\Memos.pdb
