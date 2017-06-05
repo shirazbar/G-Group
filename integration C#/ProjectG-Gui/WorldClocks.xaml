@@ -15,10 +15,11 @@
                 <DropShadowEffect BlurRadius="9" Direction="400" Color="White"/>
             </TextBlock.Effect>
         </TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="186,126,0,0" TextWrapping="Wrap" FontFamily="Script MT Bold"  Text="Please choose a country:" Name="display_txt" Foreground="Black" FontSize="20" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="153,228,0,0" TextWrapping="Wrap"  FontFamily="Script MT Bold" Text="00:00:00" Name="label1" Foreground="Black" FontSize="72" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Height="29" Margin="114,169,0,0" VerticalAlignment="Top" Width="352" Name="comboArea" Background="White" />
-        <Button Content="Start" HorizontalAlignment="Left" Margin="241,330,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Script MT Bold" FontSize="40" Click="StartClick" BorderBrush="{x:Null}" RenderTransformOrigin="0.497,1.206"/>
+        <TextBlock HorizontalAlignment="Left" Margin="114,126,0,0" TextWrapping="Wrap" FontFamily="Script MT Bold"  Text="Please choose a country:" Foreground="Black" FontSize="20" VerticalAlignment="Top" Width="347" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="114,238,0,0" TextWrapping="Wrap"  FontFamily="Script MT Bold" Text="00:00:00" Name="label1" Foreground="Black" FontSize="72" VerticalAlignment="Top" Width="352" TextAlignment="Center"/>
+        <ComboBox HorizontalAlignment="Left" Height="29" Margin="114,167,0,0" VerticalAlignment="Top" Width="352" Name="comboArea" Background="White" />
+        <Button Content="Start" HorizontalAlignment="Left" Margin="243,330,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Script MT Bold" FontSize="40" Click="StartClick" BorderBrush="{x:Null}" RenderTransformOrigin="0.497,1.206"/>
+        <TextBlock HorizontalAlignment="Left" Margin="114,209,0,0" TextWrapping="Wrap" FontFamily="Script MT Bold"  Text="Local time:" x:Name="display_txt" Foreground="Black" FontSize="20" VerticalAlignment="Top" Width="352" TextAlignment="Center"/>
 
     </Grid>
 </Window>

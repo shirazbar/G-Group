@@ -23,12 +23,16 @@ namespace ProjectG_Gui
             var urlParams = new RequestParams();
             urlParams["site"] = app;
             urlParams[app] = value;
-            if (app.Equals("bbc") || app.Equals("abc") || app.Equals("mtv") || app.Equals("nyn"))
+            if (app.Equals("BBC") || app.Equals("ABC") || app.Equals("MTV") || app.Equals("NYT"))
             {
-                resp = req.Get("http://localhost/g-group/News/index.php", urlParams);
+                resp = req.Get("http://localhost/gProj/indexNews.php", urlParams);
             }
 
             if (app.Equals("calc"))
+            {
+                resp = req.Get("http://localhost/ProjectG/index.php", urlParams);
+            }
+            if (app.Equals("timeZone"))
             {
                 resp = req.Get("http://localhost/ProjectG/index.php", urlParams);
             }

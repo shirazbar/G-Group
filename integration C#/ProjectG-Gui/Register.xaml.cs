@@ -37,8 +37,8 @@ namespace ProjectG_Gui
             var InsertUser = client.UploadValues("http://localhost/ProjectG/index.php", "POST", UserInfo);
             string resp = Encoding.UTF8.GetString(InsertUser);
             response.Text = resp;
-            UserName.Text = "";
-            UserMail.Text = "";
+            //UserName.Text = "";
+            //UserMail.Text = "";
             UserPassword.Password = "";
         }
 

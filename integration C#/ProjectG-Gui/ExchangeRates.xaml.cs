@@ -200,7 +200,7 @@ namespace ProjectG_Gui
             else if (!flag)
             {
                 urlParams["exchange"] = "-";
-                resp = req.Get("http://localhost/ProjectG/index.php", urlParams);
+                resp = req.Get("http://localhost/ProjectG", urlParams);
                 string json = resp.ToString();
 
                 JObject data = JObject.Parse(json);

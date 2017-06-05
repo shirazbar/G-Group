@@ -28,13 +28,17 @@ namespace ProjectG_Gui
     public partial class WorldClocks : Window
     {
 
-        Timer t = new Timer();
+       Timer t = new Timer();
         Object prevItem;
 
+        int H;
+        int M;
+        int S;
+        
         public WorldClocks()
         {
             InitializeComponent();
-            String[] Countries  = {"Africa/Abidjan",
+            String[] Countries = {"Africa/Abidjan",
             "Africa/Accra",
             "Africa/Addis_Ababa",
             "Africa/Algiers",
@@ -582,76 +586,69 @@ namespace ProjectG_Gui
             "W-SU",
             "Zulu"};
 
-            for (int i=0;i<Countries.Length;++i)
+            for (int i = 0; i < Countries.Length; ++i)
                 comboArea.Items.Add(Countries[i]);
+
+            //get current time
+            H = DateTime.Now.Hour;
+            M = DateTime.Now.Minute;
+            S = DateTime.Now.Second;
+           
+            Loaded += WorldClocks_Loaded;
+
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void StartClick(object sender, RoutedEventArgs e)
+        private void WorldClocks_Loaded(object sender, RoutedEventArgs e)
         {
             //timer interval
             t.Interval = 1000;   //in milliseconds
-
             t.Tick += new EventHandler(this.t_Tick);
-
             //start timer when form loads
             t.Start();  //this will use t_Tick() method
-
         }
 
-        //timer eventhandler
-        private void t_Tick(object sender, EventArgs e)
+        
+        private void StartClick(object sender, RoutedEventArgs e)
         {
-            //elad edit
+           
             HttpRequest req = new HttpRequest();
             HttpResponse resp;
             req.Cookies = new CookieDictionary();
             var urlParams = new RequestParams();
             urlParams["timeZone"] = comboArea.SelectedItem;
 
-            resp = req.Get("http://localhost/indexClock.php", urlParams);
+            resp = req.Get("http://localhost/ProjectG", urlParams);
             string json = resp.ToString();
             JObject data;
-            int hh = DateTime.Now.Hour;
-            int mm = DateTime.Now.Minute;
-            int ss = DateTime.Now.Second;
+            /*
+            H = DateTime.Now.Hour;
+            M = DateTime.Now.Minute;
+            S = DateTime.Now.Second;
+             */
             //need to edit
 
 
 
             //*end of need to edit
-            if (comboArea.SelectedItem != null)
+            if ((string)comboArea.SelectedItem != ""&&comboArea.SelectedItem !=null)
             {
-                if (prevItem != comboArea.SelectedItem || prevItem == null)
+                if (prevItem != comboArea.SelectedItem )
                 {
-                    req = new HttpRequest();
-
-                    req.Cookies = new CookieDictionary();
-                    urlParams = new RequestParams();
-                    urlParams["timeZone"] = comboArea.SelectedItem;
-
-                    resp = req.Get("http://localhost/gProj/indexClock.php", urlParams);
-                    json = resp.ToString();
+                    json = new HttpReq().GetJson("timeZone", comboArea.SelectedItem.ToString());
                     data = JObject.Parse(json);
-                    hh = (int)data["hours"];
-                    mm = (int)data["minutes"];
-                    ss = (int)data["seconds"];
+                    H = (int)data["hours"];
+                    M = (int)data["minutes"];
+                    S = (int)data["seconds"];
                     prevItem = comboArea.SelectedItem;
+                    display_txt.Text = "The country " + comboArea.SelectedItem;
                 }
             }
-
-
-
             else
             {
                 //get current time
-                hh = DateTime.Now.Hour;
-                mm = DateTime.Now.Minute;
-                ss = DateTime.Now.Second;
+                H = DateTime.Now.Hour;
+                M = DateTime.Now.Minute;
+                S = DateTime.Now.Second;
             }
 
 
@@ -660,84 +657,71 @@ namespace ProjectG_Gui
 
 
 
-            /*
-            //get current time
-            int hh = DateTime.Now.Hour;
-            int mm = DateTime.Now.Minute;
-            int ss = DateTime.Now.Second;
-            */
+      
+         
+
+        }
+
+
+        //timer eventhandler
+        private void t_Tick(object sender, EventArgs e)
+        {
+
+
+            if (S == 59)
+            {
+                S = 0;
+                M++;
+            }
+            if (M == 60)
+            {
+                M = 0;
+                H++;
+            } if (H == 24) {
+                H = 0;
+            
+            }
+
+
+         
             //time
             string time = "";
 
             //padding leading zero
-            if (hh < 10)
+            if (H < 10)
             {
-                time += "0" + hh;
+                time += "0" + H;
             }
             else
             {
-                time += hh;
+                time += H;
             }
             time += ":";
-            if (mm < 10)
+            if (M < 10)
             {
-                time += "0" + mm;
+                time += "0" + M;
             }
             else
             {
-                time += mm;
+                time += M;
             }
             time += ":";
-            if (ss < 10)
+            if (S < 10)
             {
-                time += "0" + ss;
+                time += "0" + S;
+                S++;
             }
             else
             {
-                time += ss;
+                time += S;
+                S++;
             }
-
-            string date = "";
-
-            int day = DateTime.Now.Day;
-            int month = DateTime.Now.Month;
-            int year = DateTime.Now.Year;
-
-            // padding leading zero
-            if (day < 10)
-            {
-                date += "0" + day;
-            }
-            else
-            {
-                date += day;
-            }
-            date += "/";
-            if (month < 10)
-            {
-                date += "0" + month;
-            }
-            else
-            {
-                date += month;
-            }
-            date += "/" + year;
 
             //update label
             label1.Text = time;
             //display_txt.Text = date;
-            display_txt.Text = "The country " + comboArea.SelectedItem;
+           // display_txt.Text = "The country " + comboArea.SelectedItem;
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            display_txt.Text = "The country " + comboArea.SelectedItem;
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
         }
 

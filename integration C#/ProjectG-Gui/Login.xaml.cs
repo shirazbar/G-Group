@@ -40,7 +40,7 @@ namespace ProjectG_Gui
             UserInfo.Add("login", "-");
             UserInfo.Add("UserName", UserName.Text);
             UserInfo.Add("UserPassword", UserPassword.Password);
-            var ConnectUser = client.UploadValues("http://localhost/ProjectG/index.php", "POST", UserInfo);
+            var ConnectUser = client.UploadValues("http://localhost/ProjectG", "POST", UserInfo);
             string resp = Encoding.UTF8.GetString(ConnectUser);
             resp = resp.Replace("\r", "").Replace("\n", "");
             response.Text = resp;

@@ -26,22 +26,12 @@ namespace ProjectG_Gui
             InitializeComponent();
 
             this.todolist = todolist;
-
-            for (int i = 1; i <= 31; ++i)
-            {
-                Day.Items.Add(i);
-            }
-            for (int i = 1; i <= 12; ++i)
-            {
-                Month.Items.Add(i);
-            }
         }
 
         private void AddTask_Click(object sender, RoutedEventArgs e)
         {
-            String date = Day.Text + "/" + Month.Text + "/" + Year.Text;
             this.todolist.TasksList.Items.Add(Title.Text);
-            this.todolist.DateList.Items.Add(date);
+            this.todolist.DateList.Items.Add(Date.SelectedDate);
             this.Close();
         }
     }

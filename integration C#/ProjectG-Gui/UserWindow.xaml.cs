@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjectG_Gui.NewsWidget;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -54,6 +55,12 @@ namespace ProjectG_Gui
         {
             ToDoList window = new ToDoList();
             window.Show();
+        }
+
+        private void News_Click(object sender, RoutedEventArgs e)
+        {
+            News window = new News();
+            window.ShowDialog();
         }
     }
 }

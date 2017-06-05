@@ -22,7 +22,7 @@
         <TextBox HorizontalAlignment="Left" FontSize="18" Height="29" Margin="170,194,0,0" TextWrapping="Wrap" Name="UserMail" VerticalAlignment="Top" Width="352"/>
         <PasswordBox HorizontalAlignment="Left" FontSize="18" Height="29" Margin="170,249,0,0" Name="UserPassword" VerticalAlignment="Top" Width="352"/>
         <Button Content="Create User" HorizontalAlignment="Left" Margin="188,296,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Script MT Bold" FontSize="40" Click="CreateUser_Click" BorderBrush="{x:Null}" RenderTransformOrigin="0.497,1.206"/>
-        <TextBlock HorizontalAlignment="Left" x:Name="response" Margin="43,356,0,0" TextWrapping="Wrap" FontSize="24" Foreground="White" Text="" FontFamily="David" VerticalAlignment="Top" TextAlignment="Center" FontWeight="Bold" Width="487"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="response" Margin="10,356,0,0" TextWrapping="Wrap" FontSize="24" Foreground="White" Text="" FontFamily="David" VerticalAlignment="Top" TextAlignment="Center" FontWeight="Bold" Width="552"/>
         <Button Content="Login" HorizontalAlignment="Left" Margin="473,17,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Script MT Bold" FontSize="30" Click="Login_Click" BorderBrush="{x:Null}" RenderTransformOrigin="0.497,1.206"/>
 
     </Grid>

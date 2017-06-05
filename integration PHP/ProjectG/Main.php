@@ -21,13 +21,16 @@ class Main
         $user = new User();
         require_once('Request.php');
         $req = new Request();
-        if ($req->input('register') != null){
+        if ($req->input('register') != null)
+        {
+
             $uname = $req->input('UserName');
             $umail = $req->input('UserMail');
             $upass = $req->input('UserPassword');
 
             if ($uname != null && $umail != null && $upass != null)
             {
+
                 $stmt = $user->getConn()->prepare("SELECT UserName,UserMail FROM users WHERE UserName=:UserName OR UserMail=:UserMail");
                 $stmt->execute(array(':UserName'=>$uname, ':UserMail'=>$umail));
                 $row=$stmt->fetch(PDO::FETCH_ASSOC);
@@ -86,5 +89,16 @@ class Main
             echo json_encode($object);
         }
 
+        if($req->query('timeZone') != null)
+        {
+            require_once 'MyTime.php';
+            $object = new MyTime($req->query('timeZone'));
+        }
+
+        if ($req->query("site") != null)
+        {
+            require_once 'News.php';
+            $object = new News($req->query("site"));
+        }
     }
 }

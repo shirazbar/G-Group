@@ -29,3 +29,7 @@ C:\Users\Shiraz\Documents\Visual Studio 2013\Projects\ProjectG-Gui\ProjectG-Gui\
 C:\Users\Shiraz\Documents\Visual Studio 2013\Projects\ProjectG-Gui\ProjectG-Gui\obj\Debug\ToDoList.g.cs
 C:\Users\Shiraz\Documents\Visual Studio 2013\Projects\ProjectG-Gui\ProjectG-Gui\obj\Debug\CreatingNewTask.baml
 C:\Users\Shiraz\Documents\Visual Studio 2013\Projects\ProjectG-Gui\ProjectG-Gui\obj\Debug\CreatingNewTask.g.cs
+C:\Users\Shiraz\Documents\Visual Studio 2013\Projects\ProjectG-Gui\ProjectG-Gui\obj\Debug\NewsWidget\ChosenNews.baml
+C:\Users\Shiraz\Documents\Visual Studio 2013\Projects\ProjectG-Gui\ProjectG-Gui\obj\Debug\NewsWidget\News.baml
+C:\Users\Shiraz\Documents\Visual Studio 2013\Projects\ProjectG-Gui\ProjectG-Gui\obj\Debug\NewsWidget\ChosenNews.g.cs
+C:\Users\Shiraz\Documents\Visual Studio 2013\Projects\ProjectG-Gui\ProjectG-Gui\obj\Debug\NewsWidget\News.g.cs
