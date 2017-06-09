@@ -14,9 +14,10 @@ namespace Memos
         [STAThread]
         static void Main()
         {
+            string user="shishi";
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Form1(user));
         }
     }
 }

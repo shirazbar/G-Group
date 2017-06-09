@@ -1,81 +1,39 @@
 <?php
-/*$json=file_get_contents("memos.json");
-$jsonIterator = new RecursiveIteratorIterator(
-    new RecursiveArrayIterator(json_decode($json, TRUE)),
-    RecursiveIteratorIterator::SELF_FIRST);*/
 
+/**
+ * Memos class
+ * The class gets the memos info from the database and echoes it
+ * Created by PhpStorm.
+ * User: orcohen125
+ * Date: 10/05/2017
+ * Time: 15:29
+ */
 class Memos {
-    public $title = "";
-    public $content  = "";
-    public $time = "";
-    public $arr=Array();
+    public $arr=array();
 
-    public $i=0;
-    public $j=0;
-
-
-    public function __construct($title,$content,$time)
-    {
-
-//
-//        $db=new mysqli('localhost','root','','g_group');
-//        $this->title=$title;
-//        $this->content=$content;
-//        $this->time=$time;
-//
-//        $result=mysqli_query($db,'SELECT * FROM memos');
-//        echo print_r(mysqli_fetch_array($result));
-
-
-        $mysqli = new mysqli("localhost", "root", "", "g_group");
-        if ($result = $mysqli->query("SELECT * FROM memos")) {
-
-            //print_r($result->fetch_assoc());
-            while ($result->fetch_object()) {
-                $this->arr[]=$result->fetch_assoc();
-                //print_r($result->fetch_assoc());
-                $this->i++;
+    /**
+     * Memos constructor.
+     * Getting data from database function.
+     */
+    public function __construct() {
+        $mysqli = new mysqli("localhost", "root", "", "g_group"); //create the connection with the database
+        if ($result = $mysqli->query("SELECT * FROM memos")) { //result gets the whole information from the table in database
+            $i=0; //place in lines of database array ($arr)
+            while ($line=$result->fetch_object()) { //line object is a line in the database
+                $this->arr[$i]=$line;
+                $i++;
             }
-
-            while($this->j<$this->i) {
-                echo print_r($this->arr[$this->j]);
-                //print_r($this->arr[$this->j]);
-                $this->j++;
-            }
-            //print($this->arr);
-            //print($this->arr.strval());
-
         }
+        echo $this;
+    }
+
+    /**
+     * @return string
+     *              json representation of the memos array.
+     */
+    public function __toString() {
+       return json_encode($this->arr);
     }
 }
-
-/*$arr=new ArrayIterator();
-$e=new Memos();
-$counter=0; //the current place in the created array
-foreach ($jsonIterator as $key => $val) {
-    if(is_array($val) and $key==0) { //first item in the memos array
-        $counter=$counter++;
-        $e=new Memos();
-        //echo "$key:\n";
-    } else if(is_array($val)) { //new memo in the memos array
-        $counter=$counter++;
-        $e=new Memos();
-        //echo "$key:\n";
-    } else if($key=="title") {
-        $e->title=$val;
-        //echo "$key => $val\n";
-    } else if($key=="content") {
-        $e->content = $val;
-        //echo "$key => $val\n";
-    } else if($key=="time") {
-        $e->time=$val;
-        //echo "$key => $val\n";
-        if(($counter+1)==$jsonIterator->getDepth()) { //for ending the current memo and append it to the memos array
-            $arr->append($e);
-            //echo json_encode($e);
-        }
-    }
-}
-echo json_encode($arr); //printing the whole array of memos*/
 
 ?>

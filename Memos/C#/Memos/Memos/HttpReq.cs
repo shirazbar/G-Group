@@ -18,16 +18,15 @@ namespace Memos
             this.req = new HttpRequest();
             req.Cookies = new CookieDictionary();
         }
-        public String GetJson(String app)
+        public JArray GetJson(String app)
         {
-            var urlParams = new RequestParams();
-            urlParams["site"] = app;
-            if (app.Equals("bbc")|| app.Equals("abc")|| app.Equals("mtv")|| app.Equals("nyn"))
+            if (app.Equals("Memos"))
             {
-                resp = req.Get("http://localhost/g-group/News/index.php", urlParams);
+                resp = req.Get("http://localhost/G-Group/Memos/PHP/index.php");
             }
             string json = resp.ToString();
-            return json; 
+            var result = JsonConvert.DeserializeObject<JArray>(json);
+            return result; //returns the representation of the json as an array object
         }
 
 

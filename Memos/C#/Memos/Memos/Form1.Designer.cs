@@ -30,13 +30,16 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.clearBtn = new System.Windows.Forms.Button();
+            this.addBtn = new System.Windows.Forms.Button();
+            this.timeFld = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.removeBtn = new System.Windows.Forms.Button();
+            this.saveBtn = new System.Windows.Forms.Button();
             this.memosComboBox = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textFld = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,38 +52,61 @@
             this.label1.Size = new System.Drawing.Size(111, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "Memos";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.clearBtn);
+            this.panel1.Controls.Add(this.addBtn);
+            this.panel1.Controls.Add(this.timeFld);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.removeBtn);
+            this.panel1.Controls.Add(this.saveBtn);
             this.panel1.Controls.Add(this.memosComboBox);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.textFld);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(584, 332);
             this.panel1.TabIndex = 1;
             // 
-            // button3
+            // label3
             // 
-            this.button3.Image = global::Memos.Properties.Resources.plus;
-            this.button3.Location = new System.Drawing.Point(361, 248);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(37, 34);
-            this.button3.TabIndex = 7;
-            this.button3.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(377, 74);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(133, 23);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Choose a memo:";
             // 
-            // textBox2
+            // clearBtn
             // 
-            this.textBox2.Location = new System.Drawing.Point(143, 294);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
+            this.clearBtn.Image = global::Memos.Properties.Resources.clear;
+            this.clearBtn.Location = new System.Drawing.Point(511, 248);
+            this.clearBtn.Name = "clearBtn";
+            this.clearBtn.Size = new System.Drawing.Size(34, 34);
+            this.clearBtn.TabIndex = 8;
+            this.clearBtn.UseVisualStyleBackColor = true;
+            this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
+            // 
+            // addBtn
+            // 
+            this.addBtn.Image = global::Memos.Properties.Resources.plus;
+            this.addBtn.Location = new System.Drawing.Point(341, 248);
+            this.addBtn.Name = "addBtn";
+            this.addBtn.Size = new System.Drawing.Size(37, 34);
+            this.addBtn.TabIndex = 7;
+            this.addBtn.UseVisualStyleBackColor = true;
+            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
+            // 
+            // timeFld
+            // 
+            this.timeFld.Location = new System.Drawing.Point(143, 294);
+            this.timeFld.Name = "timeFld";
+            this.timeFld.Size = new System.Drawing.Size(140, 20);
+            this.timeFld.TabIndex = 6;
             // 
             // label2
             // 
@@ -91,40 +117,52 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Last edited in :";
             // 
-            // button2
+            // removeBtn
             // 
-            this.button2.Image = global::Memos.Properties.Resources.delete;
-            this.button2.Location = new System.Drawing.Point(429, 248);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(35, 34);
-            this.button2.TabIndex = 4;
-            this.button2.UseVisualStyleBackColor = true;
+            this.removeBtn.Image = global::Memos.Properties.Resources.delete;
+            this.removeBtn.Location = new System.Drawing.Point(396, 248);
+            this.removeBtn.Name = "removeBtn";
+            this.removeBtn.Size = new System.Drawing.Size(35, 34);
+            this.removeBtn.TabIndex = 4;
+            this.removeBtn.UseVisualStyleBackColor = true;
+            this.removeBtn.Click += new System.EventHandler(this.removeBtn_Click);
             // 
-            // button1
+            // saveBtn
             // 
-            this.button1.Image = global::Memos.Properties.Resources.save;
-            this.button1.Location = new System.Drawing.Point(497, 248);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(34, 34);
-            this.button1.TabIndex = 3;
-            this.button1.UseVisualStyleBackColor = true;
+            this.saveBtn.Image = global::Memos.Properties.Resources.save;
+            this.saveBtn.Location = new System.Drawing.Point(457, 248);
+            this.saveBtn.Name = "saveBtn";
+            this.saveBtn.Size = new System.Drawing.Size(34, 34);
+            this.saveBtn.TabIndex = 3;
+            this.saveBtn.UseVisualStyleBackColor = true;
+            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
             // memosComboBox
             // 
             this.memosComboBox.FormattingEnabled = true;
-            this.memosComboBox.Location = new System.Drawing.Point(330, 76);
+            this.memosComboBox.Location = new System.Drawing.Point(330, 117);
             this.memosComboBox.Name = "memosComboBox";
             this.memosComboBox.Size = new System.Drawing.Size(242, 21);
             this.memosComboBox.TabIndex = 2;
             this.memosComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // textBox1
+            // textFld
             // 
-            this.textBox1.Location = new System.Drawing.Point(16, 27);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(293, 261);
-            this.textBox1.TabIndex = 1;
+            this.textFld.Location = new System.Drawing.Point(16, 27);
+            this.textFld.Multiline = true;
+            this.textFld.Name = "textFld";
+            this.textFld.Size = new System.Drawing.Size(293, 261);
+            this.textFld.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(327, 307);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(234, 15);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Please press clean before adding new memo !";
             // 
             // Form1
             // 
@@ -146,12 +184,15 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button removeBtn;
+        private System.Windows.Forms.Button saveBtn;
         private System.Windows.Forms.ComboBox memosComboBox;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textFld;
+        private System.Windows.Forms.TextBox timeFld;
+        private System.Windows.Forms.Button addBtn;
+        private System.Windows.Forms.Button clearBtn;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
